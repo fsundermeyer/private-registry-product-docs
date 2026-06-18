@@ -28,22 +28,22 @@ oci://registry.suse.com/private-registry/private-registry-helm \
 .Déploiement minimal avec {ingress}
 [example]
 ----
-expose : +
-  type : ingress //<1> +
-  ingress : +
-    hosts : +
+expose :
+  type : ingress //<1>
+  ingress :
+    hosts :
       core : <PRIVATE_REGISTRY_FQDN> //<2>
 
 externalURL : https://<PRIVATE_REGISTRY_FQDN> //<3>
 
 harborAdminPassword : "<MY_PASSWORD>" //<4>
 
-database : +
-  internal : +
+database :
+  internal :
     password : "<MY_PASSWORD_POSTGRESQL>"
 
-redis : +
-  internal : +
+redis :
+  internal :
    password : "<MY_PASSWORD_REDIS>"
 ----
 [callouts]
@@ -70,12 +70,12 @@ externalURL : https://<PRIVATE_REGISTRY_FQDN> //<4>
 
 harborAdminPassword : "<MY_PASSWORD>" //<5>
 
-database : +
-  internal : +
+database :
+  internal :
     password : "<MY_PASSWORD_POSTGRESQL>"
 
-redis : +
-  internal : +
+redis :
+  internal :
    password : "<MY_PASSWORD_REDIS>"
 ----
 [callouts]
